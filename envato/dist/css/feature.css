@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.feature h1 {
+  margin-top: 60px;
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature .underline {
+  width: 100vw;
+  height: 0.5vh;
+  background-color: #15A346;
+  width: 100px;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature .container .col-6 .head {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: droid-serif;
+  color: #B0B0B0;
+  margin-bottom: 40px;
+}
+.feature .container .col-6 ul {
+  list-style: none;
+  padding: 6px;
+}
+.feature .container .col-6 ul li {
+  margin-bottom: 15px;
+  /* Khoảng cách giữa các mục */
+}
+.feature .container .col-6 ul li .row {
+  display: flex;
+}
+.feature .container .col-6 ul li .row .col-2 {
+  display: flex;
+  align-items: flex-start;
+  /* Đưa biểu tượng lên phía trên cùng */
+}
+.feature .container .col-6 ul li .row .col-2 i {
+  color: white;
+  background-color: #15A346;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.feature .container .col-6 ul li .row .col-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Đảm bảo tiêu đề và văn bản căn giữa theo chiều dọc */
+}
+.feature .container .col-6 ul li .row .col-10 h4 {
+  margin-bottom: 10px;
+  color: #5d6377;
+}
+.feature .container .col-6 ul li .row .col-10 p {
+  color: gray;
+  margin-bottom: 0;
+  /* Đảm bảo không có khoảng cách không cần thiết */
+}
+.feature .progress {
+  background-image: url("https://quanticalabs.com/wp_themes/atrium/files/2014/04/image_02.jpg");
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature .progress .container .col-4 {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.feature .progress .container .col-4 h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+.feature .progress .container .col-4 p {
+  font-size: 15px;
+}
+.feature .progress .container .col-4 .progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 1rem;
+  z-index: 1000;
+}
+.feature .progress .container .col-4 .progress-bar .fill {
+  height: 100%;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}

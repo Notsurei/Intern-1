@@ -1,0 +1,139 @@
+.contact h1 {
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contact .underline {
+  width: 100px;
+  height: 0.5vh;
+  background-color: #15A346;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .container .col-6 .conhead {
+  font-family: droid-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+.contact .container .col-6 p {
+  margin-bottom: 10px;
+  font-size: 21px;
+  color: #B0B0B0;
+  margin-bottom: 50px;
+}
+.contact .container .col-6 h3, .contact .container .col-6 h5 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #484C54;
+}
+.contact .container .col-6 i {
+  font-size: 1rem;
+}
+.contact .container .col-6 .underlines {
+  width: 50px;
+  height: 3px;
+  background-color: #15A346;
+  margin-bottom: 20px;
+}
+.contact .container .col-6 input,
+.contact .container .col-6 textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #777;
+}
+.contact .container .col-6 textarea {
+  height: 100px;
+  resize: vertical;
+}
+.contact .container .col-6 button {
+  color: #777;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #484C54;
+}
+.contact .container .col-6 button:hover {
+  border: 2px solid #15A346;
+}
+.contact .container .left {
+  flex: 1;
+}
+.contact .container .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.contact .container .right .company-details .row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.contact .container .right .company-details .row .icon-text {
+  display: flex;
+  align-items: flex-start;
+}
+.contact .container .right .company-details .row .icon-text i {
+  margin-right: 10px;
+  margin-top: 20px;
+  background-color: #15A346;
+  color: white;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.contact .container .right .company-details .row .icon-text .text h5 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.contact .container .right .company-details .row .icon-text .text p {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 17px;
+}
+.contact .container .right .connect {
+  margin-top: 40px;
+}
+.contact .container .right .icons {
+  display: flex;
+  gap: 5px;
+}
+.contact .container .right .icons i {
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #15a346;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  padding: 0;
+  border-radius: 0;
+}
+.contact .container .right .icons i:hover {
+  background-color: #117a35;
+}

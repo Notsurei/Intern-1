@@ -1,0 +1,95 @@
+.galleries {
+  h1 {
+    padding-top: 60px;
+    font-size: 60px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .underline {
+    width: 100px;
+    height: 0.5vh;
+    background-color: #15a346;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .col-4 {
+        box-sizing: border-box;
+        padding: 15px;
+        .piccccc{
+
+          margin: 0 20px;
+          overflow: hidden;
+          .wrap{
+            position: relative;
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+            }
+            span.slider {
+              position: absolute;
+              // margin-top: 10px;
+              top: 0;
+              left: -100%;  
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.4);
+              background-image: url('https://quanticalabs.com/wp_themes/wp-content/themes/atrium/media/image/public/icon_image.png');
+              background-size: 50%;
+              background-repeat: no-repeat;
+              background-position: center;
+              opacity: 0;
+              transition: left 0.5s ease; // Smooth transition
+            }
+          }
+
+          .picInfo {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #15A346;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: start;
+  
+            .caption {
+              font-size: 20px;
+              font-weight: bold;
+            }
+  
+            .description {
+              font-size: 16px;
+              font-style: italic;
+            }
+          }
+          &:hover{
+            cursor: pointer;
+
+            span.slider {
+              left: 0; 
+              opacity: 1;
+            }
+            .picInfo{
+              background-color: #454444;
+            }
+          }
+        }
+        
+        
+      }
+    }
+  }
+}

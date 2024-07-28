@@ -1,0 +1,170 @@
+.contact {
+  h1 {
+    padding-top: 60px;
+    font-size: 60px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .underline {
+    width: 100px;
+    height: 0.5vh;
+    background-color: #15A346;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .col-6 {
+      .conhead{
+        font-family: droid-serif;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 21px;
+        color: #B0B0B0;
+        margin-bottom: 50px;
+      }
+
+      h3, h5 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #484C54;
+      }
+
+      i {
+        font-size: 1rem;
+      }
+
+      .underlines {
+        width: 50px;
+        height: 3px;
+        background-color: #15A346;
+        margin-bottom: 20px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #777;
+      }
+
+
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      button {
+        color: #777;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #484C54;
+        &:hover{
+          border: 2px solid #15A346;
+        }
+      }
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .company-details {
+        .row {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+
+          .icon-text {
+            display: flex;
+            align-items: flex-start;
+          
+            i {
+              margin-right: 10px;
+              margin-top: 20px; // Adjust as needed
+              background-color: #15A346;
+              color: white;
+              font-size: 30px;
+              height: 60px;
+              width: 60px; // Ensures square shape
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 10px; // Optional: adds rounded corners
+              box-sizing: border-box;
+            }
+          
+            .text {
+              h5 {
+                margin-bottom: 5px;
+                margin-top: 20px;
+                color: #333;
+                font-size: 16px;
+                font-weight: 500;
+                font-size: 20px;
+              }
+          
+              p {
+                margin-bottom: 0;
+                color: #666;
+                font-size: 17px;
+              }
+            }
+          }
+          
+        }
+      }
+
+      .connect{
+        margin-top: 40px;
+      }
+
+      .icons {
+        display: flex;
+        gap: 5px; // Adjust spacing between icons if necessary
+      
+        i {
+          width: 40px;
+          height: 40px;
+          color: white;
+          background-color: #15a346;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+          padding: 0; // Ensure no extra padding is applied
+          border-radius: 0; // Remove border radius to make it square
+      
+          &:hover {
+            background-color: #117a35; // Optional: Add a hover effect for the icon
+          }
+        }
+      }
+            
+    }
+  }
+}

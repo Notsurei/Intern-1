@@ -1,0 +1,80 @@
+.galleries h1 {
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.galleries .underline {
+  width: 100px;
+  height: 0.5vh;
+  background-color: #15a346;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.galleries .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.galleries .container .row .col-4 {
+  box-sizing: border-box;
+  padding: 15px;
+}
+.galleries .container .row .col-4 .piccccc {
+  margin: 0 20px;
+  overflow: hidden;
+}
+.galleries .container .row .col-4 .piccccc .wrap {
+  position: relative;
+}
+.galleries .container .row .col-4 .piccccc .wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.galleries .container .row .col-4 .piccccc .wrap span.slider {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("https://quanticalabs.com/wp_themes/wp-content/themes/atrium/media/image/public/icon_image.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: left 0.5s ease;
+}
+.galleries .container .row .col-4 .piccccc .picInfo {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #15A346;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: start;
+}
+.galleries .container .row .col-4 .piccccc .picInfo .caption {
+  font-size: 20px;
+  font-weight: bold;
+}
+.galleries .container .row .col-4 .piccccc .picInfo .description {
+  font-size: 16px;
+  font-style: italic;
+}
+.galleries .container .row .col-4 .piccccc:hover {
+  cursor: pointer;
+}
+.galleries .container .row .col-4 .piccccc:hover span.slider {
+  left: 0;
+  opacity: 1;
+}
+.galleries .container .row .col-4 .piccccc:hover .picInfo {
+  background-color: #454444;
+}

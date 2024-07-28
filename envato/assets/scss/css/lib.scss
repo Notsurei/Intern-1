@@ -1,0 +1,217 @@
+@import "../abstracts/variable";
+@import "../css/fonts.scss";
+@import "../abstracts/mixin";
+@import "../components/wrapImgResize";
+
+.footer {
+  background-color: #2c343d;
+  padding: 70px 0;
+  margin-top: 60px;
+
+  .container {
+    .col-md-3 {
+      padding: 0 15px;
+
+      .blog-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+          margin: 0;
+        }
+        .blog-navigation {
+          button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .carou3 {
+        margin-top: 21px;
+        // overflow: hidden;
+
+        .blog-item {
+          margin-bottom: 15px;
+          display: flex;
+          flex-direction: column; // Đặt chiều dọc
+
+          a {
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          p {
+            font-size: 15px;
+            margin-top: 3px;
+          }
+        }
+      }
+
+      h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: #15a346;
+          height: 2px;
+          box-sizing: border-box;
+          width: 50px;
+        }
+      }
+      a{
+        text-decoration: none;
+      }
+      h4,
+      h5 {
+        color: white;
+      }
+
+      p {
+        color: #b9bdc2;
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: white;
+      }
+      .bi.bi-facebook,
+      .bi.bi-twitter,
+      .bi.bi-instagram {
+        width: 40px;
+        height: 40px;
+        background-color: #49524c;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #15a346;
+        }
+      }
+
+      .social-links {
+        a {
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 10px 10px 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #ffffff;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: #24262b;
+            background-color: #ffffff;
+          }
+        }
+      }
+
+      .accordion {
+        .accordion-item {
+          border: none;
+          margin-bottom: 1rem;
+
+          .accordion-header {
+            .accordion-button {
+              background-color: #343a40;
+              color: #b9bdc2;
+              border: 1px solid #454d55;
+              border-radius: 0;
+              padding: 10px 15px;
+              font-size: 1rem;
+              box-shadow: none;
+              transition: background-color 0.3s ease, color 0.3s ease;
+
+              &:hover {
+                background-color: #495057;
+                color: #ffffff;
+              }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              &:not(.collapsed) {
+                color: white;
+                background-color: #15a346;
+              }
+            }
+          }
+
+          .accordion-collapse {
+            border-top: 1px solid #454d55;
+
+            .accordion-body {
+              padding: 10px 15px;
+              font-size: 1rem;
+              line-height: 1.6;
+              background-color: #343a40;
+              color: #b9bdc2;
+            }
+          }
+        }
+      }
+    }
+
+    .pb-menu {
+      display: flex;
+      align-items: center;
+      background-color: #15a346;
+      padding: 3rem;
+      height: 100px;
+
+      .pb-main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+
+        .pb-logo {
+          padding-top: 1%;
+          padding-left: 17%;
+
+          a {
+            max-height: 50px;
+          }
+
+          img {
+            max-height: 50px;
+          }
+        }
+      }
+    }
+
+    .dropdown {
+      .btn-primary {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

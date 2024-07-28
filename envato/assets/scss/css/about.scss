@@ -1,0 +1,192 @@
+.about {
+  position: relative;
+  
+  h1 {
+    padding-top: 60px;
+    font-size: 60px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .underline {
+    width: 100px;
+    height: 0.5vh;
+    background-color: #15a346;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    .picAbout {
+      // margin-right: 0.25rem;
+      // margin-left: 30%;
+      
+      .picItem {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    
+    .dotttt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      // margin-left: 16%;
+      z-index: 100;
+      
+      .dotAbout {
+        width: 50px;
+        height: 7px;
+        background-color: #d3cdcd;
+
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+        &.active, &:hover {
+          background-color: #fff;
+        }
+      }
+    }
+
+    .main {
+      flex: 1; 
+      margin-right: 30vh;
+      width: 85%;
+
+      h2{
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 2px;
+      }
+      .Position{
+        color: #B0B0B0;
+        font-family: droid-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      .des{
+        color: #777;
+        font-style: normal;
+        font-weight: normal;
+      }
+      ul {
+        list-style: none;
+        padding: 0; 
+        margin-top: 2rem; 
+        li {
+          font-size: 15px; 
+          color: #777;
+          margin-bottom: 0.5rem;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    
+  }
+  .carousel2 {
+    padding-top: 3rem;
+    width: 100%;
+    height: 80vh;
+    .main2 {
+      background-image: url("https://quanticalabs.com/wp_themes/atrium/files/2014/04/image_01.jpg");
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0 1rem;
+          color: white;
+          text-align: center;
+          i {
+            font-size: 7rem;
+            margin-bottom: 0.5rem;
+          }
+          h3 {
+            margin: 0.5rem;
+            width: 30vh;
+            font-size: 25px;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .dott-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    .dott {
+      width: 24px;
+      height: 9px;
+      background-color: #d3cdcd;
+      // border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover, &.active {
+        background-color: #fff;
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .about {
+    h1 {
+      padding-top: 20px;
+      font-size: 1.2rem;
+    }
+    .underline {
+      width: 50px;
+      margin-bottom: 3vh;
+    }
+    .content {
+      flex-direction: column;
+      align-items: start;
+      margin: auto;
+      .picAbout {
+        margin-bottom: 1rem;
+      }
+      .main {
+        margin-right: 0;
+        text-align: center;
+        ul {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

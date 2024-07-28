@@ -1,0 +1,146 @@
+.team h1 {
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+.team .underline {
+  width: 100px;
+  height: 0.5vh;
+  background-color: #15a346;
+  margin: 0 auto 10vh auto;
+}
+.team .container {
+  margin-top: 50px;
+  margin: 0 auto;
+}
+.team .container .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+.team .container .row .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: -30px;
+}
+.team .container .row .left .decorate {
+  overflow: hidden;
+}
+.team .container .row .left .decorate .wrap {
+  position: relative;
+}
+.team .container .row .left .decorate .wrap img {
+  width: 100%;
+  height: auto;
+}
+.team .container .row .left .decorate .wrap span.slider {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("https://quanticalabs.com/wp_themes/wp-content/themes/atrium/media/image/public/icon_image.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: left 0.5s ease;
+}
+.team .container .row .left .decorate:hover {
+  cursor: pointer;
+}
+.team .container .row .left .decorate:hover span.slider {
+  left: 0;
+  opacity: 1;
+}
+.team .container .row .left .decorate:hover .picInfo {
+  background-color: #454444;
+}
+.team .container .row .left .picInfo {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #15A346;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: start;
+}
+.team .container .row .left .picInfo .caption {
+  font-size: 20px;
+  font-weight: bold;
+}
+.team .container .row .left .picInfo .description {
+  font-family: droid-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+.team .container .row .left .icon {
+  margin-top: 5px;
+  align-self: flex-start;
+  display: flex;
+}
+.team .container .row .left .icon i {
+  width: 40px;
+  height: 40px;
+  background-color: #15a346;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.team .container .row .left .icon i:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.team .container .row .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.team .container .row .right h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 200;
+}
+.team .container .row .right .position {
+  color: #B0B0B0;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.team .container .row .right p {
+  color: #777;
+}
+.team .container .row .right .percent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.team .container .row .right .percent .numb {
+  align-self: flex-end;
+}
+.team .container .row .right .percent .hobby {
+  margin-bottom: 0.25px;
+}
+.team .container .row .right .progress-bar {
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.team .container .row .right .progress-bar .fill {
+  height: 100%;
+  background-color: #15a346;
+  transition: width 0.3s ease;
+}
